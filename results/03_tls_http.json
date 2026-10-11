@@ -4,12 +4,12 @@
     {
       "name": "V16_HTTPS_200",
       "pass": true,
-      "evidence": "HTTP/2 200 \ndate: Sun, 11 Oct 2026 11:49:05 GMT\ncontent-type: text/html; charset=utf-8\nserver: cloudflare\nlast-modified: Fri, 09 Oct 2026 20:19:47 GMT\nallow: GET, HEAD\naccept-ranges: bytes\nage: 9324\ncf-cache-status: HIT\ncf-ray: a48da3b5cea198a2-LAX\nalt-svc: h3=\":443\"; ma=86400\n\n"
+      "evidence": "HTTP/2 200 \ndate: Sun, 11 Oct 2026 12:06:58 GMT\ncontent-type: text/html; charset=utf-8\nserver: cloudflare\nlast-modified: Fri, 09 Oct 2026 20:19:47 GMT\nallow: GET, HEAD\naccept-ranges: bytes\nage: 10397\ncf-cache-status: HIT\ncf-ray: a48dbde71952ab6b-LAX\nalt-svc: h3=\":443\"; ma=86400\n\n"
     },
     {
       "name": "V16_HTTP_plain_reachable",
       "pass": true,
-      "evidence": "HTTP/1.1 200 OK\nDate: Sun, 11 Oct 2026 11:49:06 GMT\nContent-Type: text/html; charset=utf-8\nConnection: keep-alive\nServer: cloudflare\nLast-Modified: Fri, 09 Oct 2026 20:18:28 GMT\nAllow: GET, HEAD\nAccept-Ranges: bytes\nAge: 9518\ncf-cache-status: HIT\nCF-RAY: a48da3bafa061da7-LAX\nalt-svc: h3=\":443\"; ma=86400\n\n"
+      "evidence": "HTTP/1.1 200 OK\nDate: Sun, 11 Oct 2026 12:06:59 GMT\nContent-Type: text/html; charset=utf-8\nConnection: keep-alive\nServer: cloudflare\nLast-Modified: Fri, 09 Oct 2026 20:18:28 GMT\nAllow: GET, HEAD\nAccept-Ranges: bytes\nAge: 10591\ncf-cache-status: HIT\nCF-RAY: a48dbded79942f77-LAX\nalt-svc: h3=\":443\"; ma=86400\n\n"
     },
     {
       "name": "V17_TLS_cert_present",
@@ -24,7 +24,7 @@
     {
       "name": "V32_local_HTTP_visible",
       "pass": true,
-      "evidence": "GET 127.0.0.1:36101 -> 200"
+      "evidence": "GET 127.0.0.1:50759 -> 200"
     },
     {
       "name": "V09_ports_80_443_convention",

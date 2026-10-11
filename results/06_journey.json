@@ -4,7 +4,7 @@
     {
       "stage": "DNS_resolve",
       "pass": true,
-      "evidence": "['172.66.147.243', '104.20.23.154'] in 10ms"
+      "evidence": "['172.66.147.243', '104.20.23.154'] in 7ms"
     },
     {
       "stage": "TCP_443_connect",
@@ -19,7 +19,7 @@
     {
       "stage": "HTTP_response",
       "pass": true,
-      "evidence": "200 1.114231s 577B"
+      "evidence": "200 1.323946s 577B"
     },
     {
       "stage": "Routing_default_via_gateway",

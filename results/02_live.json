@@ -24,17 +24,17 @@
     {
       "name": "V24_ping_gateway",
       "pass": true,
-      "evidence": "PING 172.20.10.1 (172.20.10.1) 56(84) bytes of data.\n64 bytes from 172.20.10.1: icmp_seq=1 ttl=64 time=4.47 ms\n64 bytes from 172.20.10.1: icmp_seq=2 ttl=64 time=1.64 ms\n\n--- 172.20.10.1 ping statistics ---\n2 packets transmitted, 2 received, 0% packet loss, time 1001ms\nrtt min/avg/max/mdev = 1.640/3.057/4.474/1.417 ms"
+      "evidence": "PING 172.20.10.1 (172.20.10.1) 56(84) bytes of data.\n64 bytes from 172.20.10.1: icmp_seq=1 ttl=64 time=1.74 ms\n64 bytes from 172.20.10.1: icmp_seq=2 ttl=64 time=1.58 ms\n\n--- 172.20.10.1 ping statistics ---\n2 packets transmitted, 2 received, 0% packet loss, time 1002ms\nrtt min/avg/max/mdev = 1.583/1.660/1.737/0.077 ms"
     },
     {
       "name": "V24_ping_8888",
       "pass": true,
-      "evidence": "PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=119 time=261 ms\n64 bytes from 8.8.8.8: icmp_seq=2 ttl=119 time=283 ms\n\n--- 8.8.8.8 ping statistics ---\n2 packets transmitted, 2 received, 0% packet loss, time 1001ms\nrtt min/avg/max/mdev = 260.615/271.681/282.748/11.066 ms"
+      "evidence": "PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=119 time=305 ms\n64 bytes from 8.8.8.8: icmp_seq=2 ttl=119 time=266 ms\n\n--- 8.8.8.8 ping statistics ---\n2 packets transmitted, 2 received, 0% packet loss, time 1000ms\nrtt min/avg/max/mdev = 266.192/285.471/304.750/19.279 ms"
     },
     {
       "name": "V13_DNS_resolves",
       "pass": true,
-      "evidence": "142.251.32.174"
+      "evidence": "142.251.218.14"
     },
     {
       "name": "V09_V33_listening_TCP_observed",
@@ -44,7 +44,7 @@
     {
       "name": "V15_ARP_neigh_table",
       "pass": true,
-      "evidence": "172.27.0.3 dev br-88497a3447bf lladdr 92:cc:53:66:0a:30 STALE \n172.27.0.5 dev br-88497a3447bf lladdr e2:af:ab:7b:e7:ad STALE \n172.17.0.2 dev docker0 FAILED \n172.29.0.2 dev br-7b6feb6fde03 lladdr 22:08:e5:2b:1c:d8 REACHABLE \n172.20.10.1 dev wlo1 lladdr 42:98:ad:12:98:64 REACHABLE \n172.27.0.8 dev br-88497a3447bf lladdr a2:96:a8:fe:c7:6d STALE \n172.27.0.7 dev br-88497a3447bf lladdr 9e:6a:c2:03:22:9f STALE \n172.27.0.4 dev br-88497a3447bf lladdr 46:bd:17:c0:10:9b STALE"
+      "evidence": "172.27.0.3 dev br-88497a3447bf lladdr 92:cc:53:66:0a:30 STALE \n172.27.0.5 dev br-88497a3447bf lladdr 42:39:bf:b0:d3:31 STALE \n172.17.0.2 dev docker0 FAILED \n172.29.0.2 dev br-7b6feb6fde03 lladdr 22:08:e5:2b:1c:d8 REACHABLE \n172.20.10.1 dev wlo1 lladdr 42:98:ad:12:98:64 REACHABLE \n172.27.0.8 dev br-88497a3447bf lladdr a2:96:a8:fe:c7:6d STALE \n172.27.0.7 dev br-88497a3447bf lladdr 9e:6a:c2:03:22:9f STALE \n172.27.0.4 dev br-88497a3447bf lladdr 46:bd:17:c0:10:9b STALE"
     },
     {
       "name": "V06_IPv6_present",

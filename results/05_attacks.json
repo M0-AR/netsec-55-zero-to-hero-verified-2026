@@ -14,12 +14,12 @@
     {
       "name": "LIVE_DNS_example.com_sane",
       "pass": true,
-      "evidence": "['172.66.147.243', '104.20.23.154']"
+      "evidence": "['104.20.23.154', '172.66.147.243']"
     },
     {
       "name": "LIVE_DNS_google.com_sane",
       "pass": true,
-      "evidence": "['142.251.32.174']"
+      "evidence": "['142.251.218.14']"
     },
     {
       "name": "SYNTH_detectors_unit_pass",

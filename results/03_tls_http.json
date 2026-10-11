@@ -1,0 +1,36 @@
+{
+  "experiment": "03_tls_http",
+  "checks": [
+    {
+      "name": "V16_HTTPS_200",
+      "pass": true,
+      "evidence": "HTTP/2 200 \ndate: Sun, 11 Oct 2026 11:49:05 GMT\ncontent-type: text/html; charset=utf-8\nserver: cloudflare\nlast-modified: Fri, 09 Oct 2026 20:19:47 GMT\nallow: GET, HEAD\naccept-ranges: bytes\nage: 9324\ncf-cache-status: HIT\ncf-ray: a48da3b5cea198a2-LAX\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    {
+      "name": "V16_HTTP_plain_reachable",
+      "pass": true,
+      "evidence": "HTTP/1.1 200 OK\nDate: Sun, 11 Oct 2026 11:49:06 GMT\nContent-Type: text/html; charset=utf-8\nConnection: keep-alive\nServer: cloudflare\nLast-Modified: Fri, 09 Oct 2026 20:18:28 GMT\nAllow: GET, HEAD\nAccept-Ranges: bytes\nAge: 9518\ncf-cache-status: HIT\nCF-RAY: a48da3bafa061da7-LAX\nalt-svc: h3=\":443\"; ma=86400\n\n"
+    },
+    {
+      "name": "V17_TLS_cert_present",
+      "pass": true,
+      "evidence": "subject=CN=example.com\nissuer=C=US, O=SSL Corporation, CN=Cloudflare TLS Issuing ECC CA 3\nnotBefore=Sep 26 22:49:11 2026 GMT\nnotAfter=Dec 25 22:56:35 2026 GMT\n"
+    },
+    {
+      "name": "V17_TLS_negotiated",
+      "pass": true,
+      "evidence": "* TLSv1.3 (OUT), TLS handshake, Client hello (1):\n"
+    },
+    {
+      "name": "V32_local_HTTP_visible",
+      "pass": true,
+      "evidence": "GET 127.0.0.1:36101 -> 200"
+    },
+    {
+      "name": "V09_ports_80_443_convention",
+      "pass": true,
+      "evidence": "HTTP conventionally 80, HTTPS 443 (verified via curl above; service may differ \u2014 video warns not to trust port alone)"
+    }
+  ],
+  "all_pass": true
+}

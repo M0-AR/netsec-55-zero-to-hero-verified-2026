@@ -1,0 +1,84 @@
+{
+  "experiment": "01_subnet",
+  "all_pass": true,
+  "checks": [
+    {
+      "cidr": "192.168.1.0/24",
+      "total": 256,
+      "usable": 254,
+      "network": "192.168.1.0",
+      "broadcast": "192.168.1.255",
+      "first_usable": "192.168.1.1",
+      "last_usable": "192.168.1.254",
+      "expected": {
+        "total": 256,
+        "usable": 254
+      },
+      "pass": true
+    },
+    {
+      "cidr": "192.168.1.0/26",
+      "total": 64,
+      "usable": 62,
+      "network": "192.168.1.0",
+      "broadcast": "192.168.1.63",
+      "first_usable": "192.168.1.1",
+      "last_usable": "192.168.1.62",
+      "expected": {
+        "total": 64,
+        "usable": 62
+      },
+      "pass": true
+    },
+    {
+      "cidr": "192.168.1.64/26",
+      "total": 64,
+      "usable": 62,
+      "network": "192.168.1.64",
+      "broadcast": "192.168.1.127",
+      "first_usable": "192.168.1.65",
+      "last_usable": "192.168.1.126",
+      "expected": {
+        "total": 64,
+        "usable": 62
+      },
+      "pass": true
+    },
+    {
+      "cidr": "192.168.1.128/26",
+      "total": 64,
+      "usable": 62,
+      "network": "192.168.1.128",
+      "broadcast": "192.168.1.191",
+      "first_usable": "192.168.1.129",
+      "last_usable": "192.168.1.190",
+      "expected": {
+        "total": 64,
+        "usable": 62
+      },
+      "pass": true
+    },
+    {
+      "cidr": "192.168.1.192/26",
+      "total": 64,
+      "usable": 62,
+      "network": "192.168.1.192",
+      "broadcast": "192.168.1.255",
+      "first_usable": "192.168.1.193",
+      "last_usable": "192.168.1.254",
+      "expected": {
+        "total": 64,
+        "usable": 62
+      },
+      "pass": true
+    },
+    {
+      "cidr": "172.20.10.0/28 (LIVE observed wlo1)",
+      "total": 16,
+      "usable": 14,
+      "network": "172.20.10.0",
+      "broadcast": "172.20.10.15",
+      "pass": true
+    }
+  ]
+}

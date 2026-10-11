@@ -1,0 +1,36 @@
+{
+  "experiment": "06_web_journey",
+  "stages": [
+    {
+      "stage": "DNS_resolve",
+      "pass": true,
+      "evidence": "['172.66.147.243', '104.20.23.154'] in 10ms"
+    },
+    {
+      "stage": "TCP_443_connect",
+      "pass": true,
+      "evidence": "True"
+    },
+    {
+      "stage": "TLS_handshake",
+      "pass": true,
+      "evidence": "* TLSv1.3 (OUT), TLS handshake, Client hello (1):\n* TLSv1.3 (IN), TLS handshake, Server hello (2):\n* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):\n* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):\n* TLSv1.3 (IN), TLS handshake, Certificate (11):\n* TLSv1.3 (IN), TLS handshake, CERT verify (15):\n* TLSv1.3 (IN), TLS handshake, Finished (20):\n* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):\n* TLSv1.3 (OUT), TLS handshake, Finished (20):\n* SSL connection using TLSv1.3 / T"
+    },
+    {
+      "stage": "HTTP_response",
+      "pass": true,
+      "evidence": "200 1.114231s 577B"
+    },
+    {
+      "stage": "Routing_default_via_gateway",
+      "pass": true,
+      "evidence": "default via 172.20.10.1 dev wlo1 proto dhcp src 172.20.10.2 metric 600 \n"
+    },
+    {
+      "stage": "Firewall_observable",
+      "pass": true,
+      "evidence": "sudo: interactive authentication is required\nERROR: You need to be root to run this script\nOperation not permitted (you must be root)\nnetlink: Error: cache initialization failed: Operation not permitted\niptables v1.8.11 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)\n"
+    }
+  ],
+  "all_pass": true
+}

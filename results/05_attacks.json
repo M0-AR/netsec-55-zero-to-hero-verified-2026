@@ -1,0 +1,36 @@
+{
+  "experiment": "05_attack_detection",
+  "checks": [
+    {
+      "name": "LIVE_ARP_no_mass_duplicate_MAC",
+      "pass": true,
+      "evidence": "entries=7 dup>3:[]"
+    },
+    {
+      "name": "LIVE_gateway_known",
+      "pass": true,
+      "evidence": "default via 172.20.10.1 dev wlo1 proto dhcp src 172.20.10.2 metric 600 \n"
+    },
+    {
+      "name": "LIVE_DNS_example.com_sane",
+      "pass": true,
+      "evidence": "['172.66.147.243', '104.20.23.154']"
+    },
+    {
+      "name": "LIVE_DNS_google.com_sane",
+      "pass": true,
+      "evidence": "['142.251.32.174']"
+    },
+    {
+      "name": "SYNTH_detectors_unit_pass",
+      "pass": true,
+      "evidence": "arp/dns/dhcp/scan/volume 7/7 assertions"
+    },
+    {
+      "name": "SYNTH_DoS_volume_detector",
+      "pass": true,
+      "evidence": "50->800pps factor 16x >5x threshold"
+    }
+  ],
+  "all_pass": true
+}

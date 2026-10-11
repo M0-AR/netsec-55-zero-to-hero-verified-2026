@@ -1,0 +1,36 @@
+services:
+  analyst:
+    build: .
+    container_name: netsec55-analyst
+    volumes:
+      - ./experiments:/lab/experiments
+      - ./data:/lab/data
+      - ./results:/lab/results
+    command: sleep infinity
+    networks:
+      labnet:
+        ipv4_address: 192.168.55.10
+
+  web-lab:
+    image: python:3.11-slim
+    container_name: netsec55-web
+    working_dir: /srv
+    command: python3 -m http.server 8000
+    networks:
+      labnet:
+        ipv4_address: 192.168.55.20
+
+  dns-lab:
+    image: python:3.11-slim
+    container_name: netsec55-dnsnote
+    command: sleep infinity
+    networks:
+      labnet:
+        ipv4_address: 192.168.55.53
+
+networks:
+  labnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.55.0/24
